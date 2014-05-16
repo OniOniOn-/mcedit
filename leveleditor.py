@@ -288,7 +288,7 @@ class CameraViewport(GLViewport):
     def brakeOff(self):
         self.brake = False
 
-    tickInterval = 1000 / 30
+    tickInterval = 1000 / Settings.targetFPS.get()
 
     oldPosition = (0, 0, 0)
 
